@@ -1,0 +1,16 @@
+<table>
+	<% @moods.each do |mood| %>
+		<tr>
+			<td>
+				<%= mood.created_at %>
+			</td>
+			<td>
+				<% if mood.happy_or_sad==true %>
+					Happy
+				<% else %>
+					Sad
+				<% end %>
+			</td>
+		</tr>
+	<% end %>
+</table>
